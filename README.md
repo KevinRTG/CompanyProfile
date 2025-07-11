@@ -1,116 +1,97 @@
-
-
 ```markdown
-🏢 Company Profile Website
+# 🏢 Company Profile Website
 
-This is a responsive and modern *Company Profile* website built using *Next.js*, *React*, and *Tailwind CSS*. Designed for companies that want a clean and functional web presence with fast performance and easy deployment.
+A responsive, modern, and dynamic company profile website built using **Next.js**, **React**, and **Tailwind CSS**. Designed for companies that want a clean, fast, and scalable online presence — complete with chatbot, product previews, and contact integration.
 
-![Preview](https://github.com/Vinez666/CompanyProfile/blob/master/public/preview.png?raw=true)
-
+![Home Preview](https://github.com/Vinez666/CompanyProfile/blob/master/preview.png?raw=true)
 
 ---
 
-🚀 Features
+## 🚀 Features
 
-- ⚡ Fast and optimized with Next.js
+- ⚡ Blazing-fast performance with Next.js
 - 💬 Integrated chatbot using Botpress
-- 🧭 Smooth navigation with Expo Router-style structure
+- 🧭 Smooth page transitions with Framer Motion
 - 🛍️ Product previews linked to Tokopedia / Shopee
-- 📱 Fully responsive (mobile + desktop)
-- ✨ Animations and transitions with Framer Motion
-- 📧 Contact form (email/WhatsApp integration)
+- 📱 Fully responsive design for desktop & mobile
+- ✉️ Contact form with email / WhatsApp integration
 
 ---
 
-📁 Project Structure
+## 🛠️ Tech Stack
 
-```
+- **Next.js** – React framework for SSR and static generation
+- **Tailwind CSS** – Utility-first CSS for rapid UI development
+- **Framer Motion** – Page transitions and animations
+- **Botpress** – AI-powered chatbot integration
+- **TypeScript** – Strongly typed JavaScript
 
+---
+
+## 📁 Project Structure
+
+<pre>
 ├── app/
-│   ├── \_layout.tsx        # Main layout with navigation
-│   ├── (tabs)/\_layout.tsx # Tab navigation layout
-│   ├── home/              # Home page
-│   ├── about/             # About page
-│   ├── product/           # Product page
-│   └── contact/           # Contact page
-├── components/            # Reusable components (Navbar, Footer, etc.)
-├── public/                # Static assets
-├── styles/                # Global styles
+│   ├── _layout.tsx             # Main layout with navbar & footer
+│   ├── (tabs)/_layout.tsx      # Tab navigation layout
+│   ├── home/                   # Home page
+│   ├── about/                  # About page
+│   ├── product/                # Product page
+│   └── contact/                # Contact page
+├── components/                 # Reusable UI components
+├── public/                     # Static assets (images, favicon, etc.)
+├── styles/                     # Tailwind/global styles
 ├── .gitignore
 ├── package.json
 └── README.md
-
-````
-
----
-
-🛠️ Tech Stack
-
-- **Next.js** – React framework for SSR & static web apps
-- **Tailwind CSS** – Utility-first CSS for rapid UI development
-- **Botpress** – AI chatbot integration
-- **Framer Motion** – Smooth page transitions and animations
-- **TypeScript** – Static typing for safer code
+</pre>
 
 ---
 
-📦 Installation
+## 📦 Installation
+
+To set up the project locally:
 
 ```bash
-Clone the repo
+# Clone the repository
 git clone https://github.com/Vinez666/CompanyProfile.git
 
-Navigate to project directory
+# Navigate into the directory
 cd CompanyProfile
 
-Install dependencies
+# Install dependencies
 npm install
 
-Start development server
+# Start the development server
 npm run dev
-````
-
----
+Then open http://localhost:3000 in your browser.
 
 🌐 Deployment
+This project is optimized for deployment on Vercel.
 
-This project is ready for deployment on **Vercel**.
-
-```bash
+bash
+Copy
+Edit
 # Build for production
 npm run build
 
-# Start production server
+# Start the production server
 npm start
-```
+Or deploy easily via https://vercel.com by connecting your GitHub repo. Vercel will auto-detect the Next.js project and build it automatically.
 
-> Or simply connect your GitHub repo to [vercel.com](https://vercel.com) and deploy automatically on push.
-
----
+💬 Chatbot Integration
+This site includes a chatbot powered by Botpress, which is embedded globally across all pages. You can customize the chatbot behavior and style by configuring the Botpress widget script in your layout file.
 
 📬 Contact
+For inquiries, feedback, or collaboration:
 
-Need help or want to contribute?
+📧 Email: your.email@example.com
 
-* 📧 Email: [your.email@example.com](mailto:your.email@example.com)
-* 💬 WhatsApp: +62xxxxxxxxxx
-* 🌐 Website: [yourcompanysite.com](https://yourcompanysite.com)
+💬 WhatsApp: +62-xxx-xxx-xxxx
 
----
+🌐 Website: yourcompanysite.com
 
 📄 License
+This project is open-source under the MIT License.
 
-This project is open-source and available under the [MIT License](LICENSE).
-
-```
-
----
-
-✅ Petunjuk Lanjutan
-
-- Simpan file ini sebagai `README.md` di root proyek kamu.
-- Kalau kamu punya **screenshot website**, letakkan di `public/preview.png` dan aktifkan bagian `![Preview](...)`.
-- Ubah bagian kontak sesuai data kamu.
-
----
-
+Built with ❤️ using Next.js, Tailwind CSS, and Botpress
