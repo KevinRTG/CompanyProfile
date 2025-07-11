@@ -2,7 +2,7 @@
 
 A modern, responsive, and interactive company profile website built with **Next.js**, **Tailwind CSS**, and **Botpress AI Chatbot**. This project is designed to help companies showcase their identity, products, and contact information in a sleek and engaging format.
 
-![Preview](https://github.com/Vinez666/CompanyProfile/blob/public/preview.png?raw=true)
+![Preview](https://github.com/Vinez666/CompanyProfile/blob/master/public/preview.png?raw=true)
 
 ---
 
