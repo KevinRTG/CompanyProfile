@@ -1,11 +1,9 @@
 
 
----
-
 ```markdown
 🏢 Company Profile Website
 
-This is a responsive and modern **Company Profile** website built using **Next.js**, **React**, and **Tailwind CSS**. Designed for companies that want a clean and functional web presence with fast performance and easy deployment.
+This is a responsive and modern *Company Profile* website built using *Next.js*, *React*, and *Tailwind CSS*. Designed for companies that want a clean and functional web presence with fast performance and easy deployment.
 
 ![Preview](./public/preview.png) <!-- Ganti dengan gambar screenshot jika ada -->
 
