@@ -32,7 +32,7 @@ It’s lightweight, fully customizable, and ideal for startups, businesses, or a
 
 | Home Page | About Section | Product Preview |
 |-----------|----------------|-----------------|
-| ![Home](https://github.com/Vinez666/CompanyProfile/blob/master/preview.png?raw=true) | ![About](https://github.com/Vinez666/CompanyProfile/blob/public/about.png?raw=true) | ![Product](https://github.com/Vinez666/CompanyProfile/blob/public/product.png?raw=true) |
+| ![Home](https://github.com/Vinez666/CompanyProfile/blob/master/public/preview.png?raw=true) | ![About](https://github.com/Vinez666/CompanyProfile/blob/master/public/about.png?raw=true) | ![Product](https://github.com/Vinez666/CompanyProfile/blob/master/public/product.png?raw=true) |
 
 ---
 
