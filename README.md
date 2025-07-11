@@ -1,5 +1,5 @@
 ```markdown
-# 🏢 Company Profile Website
+🏢 Company Profile Website
 
 A responsive, modern, and dynamic company profile website built using **Next.js**, **React**, and **Tailwind CSS**. Designed for companies that want a clean, fast, and scalable online presence — complete with chatbot, product previews, and contact integration.
 
@@ -7,7 +7,7 @@ A responsive, modern, and dynamic company profile website built using **Next.js*
 
 ---
 
-## 🚀 Features
+🚀 Features
 
 - ⚡ Blazing-fast performance with Next.js
 - 💬 Integrated chatbot using Botpress
@@ -18,7 +18,7 @@ A responsive, modern, and dynamic company profile website built using **Next.js*
 
 ---
 
-## 🛠️ Tech Stack
+🛠️ Tech Stack
 
 - **Next.js** – React framework for SSR and static generation
 - **Tailwind CSS** – Utility-first CSS for rapid UI development
@@ -28,27 +28,7 @@ A responsive, modern, and dynamic company profile website built using **Next.js*
 
 ---
 
-## 📁 Project Structure
-
-<pre>
-├── app/
-│   ├── _layout.tsx             # Main layout with navbar & footer
-│   ├── (tabs)/_layout.tsx      # Tab navigation layout
-│   ├── home/                   # Home page
-│   ├── about/                  # About page
-│   ├── product/                # Product page
-│   └── contact/                # Contact page
-├── components/                 # Reusable UI components
-├── public/                     # Static assets (images, favicon, etc.)
-├── styles/                     # Tailwind/global styles
-├── .gitignore
-├── package.json
-└── README.md
-</pre>
-
----
-
-## 📦 Installation
+📦 Installation
 
 To set up the project locally:
 
