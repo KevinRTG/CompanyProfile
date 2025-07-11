@@ -23,8 +23,7 @@ It’s lightweight, fully customizable, and ideal for startups, businesses, or a
 
 ## 🚀 Live Demo
 
-🔗 [View Deployed Website]([https://your-vercel-link.vercel.app](https://company-profile-five-eta.vercel.app/))  
-*(Replace with actual link)*
+🔗 [View Deployed Website](https://company-profile-five-eta.vercel.app/)  
 
 ---
 
