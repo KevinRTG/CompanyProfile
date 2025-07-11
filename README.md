@@ -5,7 +5,7 @@
 
 This is a responsive and modern *Company Profile* website built using *Next.js*, *React*, and *Tailwind CSS*. Designed for companies that want a clean and functional web presence with fast performance and easy deployment.
 
-![Preview](./public/Screenshot%202025-07-11%20234316.png)
+![Preview](./public/preview.png)
 
 
 ---
