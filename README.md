@@ -1,69 +1,121 @@
-```markdown
-🏢 Company Profile Website
+# 🏢 Company Profile Website
 
-A responsive, modern, and dynamic company profile website built using **Next.js**, **React**, and **Tailwind CSS**. Designed for companies that want a clean, fast, and scalable online presence — complete with chatbot, product previews, and contact integration.
+A modern, responsive, and interactive company profile website built with **Next.js**, **Tailwind CSS**, and **Botpress AI Chatbot**. This project is designed to help companies showcase their identity, products, and contact information in a sleek and engaging format.
 
-![Home Preview](https://github.com/Vinez666/CompanyProfile/blob/master/preview.png?raw=true)
-
----
-
-🚀 Features
-
-- ⚡ Blazing-fast performance with Next.js
-- 💬 Integrated chatbot using Botpress
-- 🧭 Smooth page transitions with Framer Motion
-- 🛍️ Product previews linked to Tokopedia / Shopee
-- 📱 Fully responsive design for desktop & mobile
-- ✉️ Contact form with email / WhatsApp integration
+![Preview](https://github.com/Vinez666/CompanyProfile/blob/public/preview.png?raw=true)
 
 ---
 
-🛠️ Tech Stack
+## 📌 Overview
 
-- **Next.js** – React framework for SSR and static generation
-- **Tailwind CSS** – Utility-first CSS for rapid UI development
-- **Framer Motion** – Page transitions and animations
-- **Botpress** – AI-powered chatbot integration
-- **TypeScript** – Strongly typed JavaScript
+This company profile website provides:
+
+- A professional landing page
+- Company background section
+- Product showcase linking to marketplaces (Shopee/Tokopedia)
+- Smart AI-powered chatbot (via Botpress)
+- Responsive design across devices
+- Contact form that integrates with email or WhatsApp
+
+It’s lightweight, fully customizable, and ideal for startups, businesses, or agencies seeking an online presence.
 
 ---
 
-📦 Installation
+## 🚀 Live Demo
 
-To set up the project locally:
+🔗 [View Deployed Website](https://your-vercel-link.vercel.app)  
+*(Replace with actual link)*
+
+---
+
+## 🖼️ Screenshots
+
+| Home Page | About Section | Product Preview |
+|-----------|----------------|-----------------|
+| ![Home](https://github.com/Vinez666/CompanyProfile/blob/master/preview.png?raw=true) | ![About](https://github.com/Vinez666/CompanyProfile/blob/public/about.png?raw=true) | ![Product](https://github.com/Vinez666/CompanyProfile/blob/public/product.png?raw=true) |
+
+---
+
+## ✨ Features
+
+- ⚡ Super fast using **Next.js**
+- 🎨 Styled with **Tailwind CSS**
+- 🧠 Smart chatbot powered by **Botpress**
+- 🛒 External product links to **Tokopedia/Shopee**
+- 📱 Mobile-first and fully responsive
+- ✉️ Contact via email or WhatsApp
+- 🎥 Smooth page animations with Framer Motion
+
+---
+
+## ⚙️ Technologies Used
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Botpress](https://botpress.com/)
+- TypeScript
+
+---
+
+## 📦 Getting Started
+
+### 1. Clone the Repository
 
 ```bash
-# Clone the repository
 git clone https://github.com/Vinez666/CompanyProfile.git
-
-# Navigate into the directory
 cd CompanyProfile
-
-# Install dependencies
+2. Install Dependencies
+bash
+Copy
+Edit
 npm install
-
-# Start the development server
+3. Start Development Server
+bash
+Copy
+Edit
 npm run dev
-Then open http://localhost:3000 in your browser.
+Open http://localhost:3000 to view it in the browser.
 
-🌐 Deployment
-This project is optimized for deployment on Vercel.
+🚀 Deployment (Vercel)
+You can deploy this project instantly with Vercel:
 
 bash
 Copy
 Edit
-# Build for production
 npm run build
-
-# Start the production server
 npm start
-Or deploy easily via https://vercel.com by connecting your GitHub repo. Vercel will auto-detect the Next.js project and build it automatically.
+Or connect this repo to your Vercel dashboard for automatic deploy on Git push.
 
-💬 Chatbot Integration
-This site includes a chatbot powered by Botpress, which is embedded globally across all pages. You can customize the chatbot behavior and style by configuring the Botpress widget script in your layout file.
+🤖 Botpress Chatbot Integration
+This project includes a Botpress chatbot that is auto-injected into each page. You can customize:
+
+Bot ID
+
+Theme
+
+Trigger
+
+Welcome message
+
+Find the script injection in your main layout file (_layout.tsx).
+
+🧠 Use Case
+This template is perfect for:
+
+Company Profile Websites
+
+Small Business Portfolios
+
+Landing Pages for Startups
+
+Product Promotion Sites
+
+Agency Showcases
 
 📬 Contact
-For inquiries, feedback, or collaboration:
+For inquiries or collaboration:
 
 📧 Email: your.email@example.com
 
@@ -72,6 +124,6 @@ For inquiries, feedback, or collaboration:
 🌐 Website: yourcompanysite.com
 
 📄 License
-This project is open-source under the MIT License.
+This project is licensed under the MIT License.
 
-Built with ❤️ using Next.js, Tailwind CSS, and Botpress
+Made with ❤️ by Vinez666
