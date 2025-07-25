@@ -42,7 +42,7 @@ export default function Home() {
       {/* HERO SECTION */}
       <section id="hero" className="bg-black/90 py-20 text-center" data-aos="fade-up"> {/* ✨ */}
         <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Solusi Digital untuk Bisnis Masa Depan</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Sousi Digital untuk Bisnis Masa Depan</h1>
           <p className="text-lg text-white mb-6">
             Kami membantu perusahaan berkembang melalui teknologi modern dan layanan terbaik.
           </p>
