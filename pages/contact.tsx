@@ -59,7 +59,7 @@ export default function Contact() {
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Hubungi Tim Kami</h1>
           <p className="text-lg mb-6">
-            Kami siap membantu kebutuhan bisnis digital Anda.
+            Kami siap membantu Mengedepankan pelayanan dan makna perjalanan bersama Daihatsu.
           </p>
           <a
             href="#form"
@@ -121,21 +121,21 @@ export default function Contact() {
               <Mail className="text-blue-600 mt-1" />
               <div>
                 <h4 className="font-semibold">Email</h4>
-                <p>info@company.com</p>
+                <p>yannuruzzaman112@gmail.com</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <Phone className="text-blue-600 mt-1" />
               <div>
                 <h4 className="font-semibold">Telepon</h4>
-                <p>+62 812 3456 7890</p>
+                <p>+62 821 5150 2168</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <MapPin className="text-blue-600 mt-1" />
               <div>
                 <h4 className="font-semibold">Alamat</h4>
-                <p>Jl. Merdeka No.123, Jakarta</p>
+                <p> Komplek Cikarang Square Jl. Boulevard Cikarang Square No. 1, Pasirsari, Cikarang Sel., Kabupaten Bekasi</p>
               </div>
             </div>
 
