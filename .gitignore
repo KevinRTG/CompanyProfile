@@ -11,6 +11,10 @@ out/
 .env.local
 .env.*.local
 
+# Editor/IDE files
+.vscode/
+.idea/
+
 # OS files
 .DS_Store
 Thumbs.db
