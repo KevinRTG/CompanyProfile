@@ -2,14 +2,14 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-black/90 text-gray-300 pt-12 pb-6">
+    <footer className="bg-red-600 text-gray-300 pt-12 pb-6">
       <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-8 text-sm">
         {/* Branding */}
         <div>
           <h3 className="text-white text-xl font-bold mb-4">
-            PT. Nama Perusahaan
+            PT. ASTRIDO PRIMA MOBILINDO
           </h3>
-          <p>Solusi digital terpercaya untuk perkembangan bisnis Anda.</p>
+          <p>Daihatsu, Teman Perjalanan Hidup Anda, Pelayanan Ramah, Mobil Berkualitas</p>
         </div>
 
         {/* Navigation */}
@@ -76,8 +76,8 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="mt-10 text-center text-xs text-gray-500 border-t border-gray-700 pt-4">
-        &copy; 2025 PT. Nama Perusahaan. All rights reserved.
+      <div className="mt-10 text-center text-xs text-white border-t border-gray-700 pt-4">
+        &copy; 2025 Alfiyan Nuruzzamman. All rights reserved.
       </div>
     </footer>
   );

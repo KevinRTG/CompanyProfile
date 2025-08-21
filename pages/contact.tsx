@@ -55,7 +55,7 @@ export default function Contact() {
       <Navbar />
 
       {/* HERO CONTACT */}
-      <section className="bg-black/90 py-20 text-center text-white" data-aos="fade-up">
+      <section className="bg-red-900 py-20 text-center text-white" data-aos="fade-up">
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Hubungi Tim Kami</h1>
           <p className="text-lg mb-6">
@@ -63,7 +63,7 @@ export default function Contact() {
           </p>
           <a
             href="#form"
-            className="border border-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-500 transition"
+            className="border border-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-600 transition"
           >
             Kirim Pesan
           </a>
@@ -106,7 +106,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
               />
-              <button type="submit" className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+              <button type="submit" className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-800 transition">
                 Kirim Pesan
               </button>
             </form>
@@ -141,7 +141,7 @@ export default function Contact() {
 
             {/* AVATAR/ILUSTRASI */}
             <img
-              src="/contact-illustration.svg"
+              src="/reshot-illustration-customer-service-agent-MZRWCUNPKL.png"
               alt="Customer Support"
               className="w-full max-w-sm mx-auto mt-6"
               data-aos="zoom-in"
@@ -150,7 +150,7 @@ export default function Contact() {
             {/* GOOGLE MAP */}
             <iframe
               className="w-full h-64 rounded-lg shadow"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126919.11184841507!2d106.68942916749753!3d-6.229386716323532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f157f2b5d865%3A0x2fa3137f7b4e30ae!2sJakarta!5e0!3m2!1sen!2sid!4v1719120000000!5m2!1sen!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63452.98857780254!2d107.07417890144494!3d-6.288452787251718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699b1effffffff%3A0xad17b419be93b7a2!2sDAIHATSU%20Astrido%20Cikarang!5e0!3m2!1sid!2sid!4v1755796548637!5m2!1sid!2sid"
               allowFullScreen
               loading="lazy"
             ></iframe>

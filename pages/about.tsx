@@ -16,7 +16,7 @@ export default function About() {
     script.onload = () => {
       if (window.botpress) {
         window.botpress.on('webchat:ready', () => {
-          window.botpress.open();
+          window.botpress.close();
         });
 
         window.botpress.init({
@@ -34,26 +34,28 @@ export default function About() {
       <Navbar />
 
       {/* Tentang Kami, Visi & Misi */}
-      <section className="bg-black/90 py-20 text-white">
+      <section className="bg-red-900 py-20 text-white">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-6">Tentang Kami</h2>
           <p className="text-lg text-center mb-12 max-w-3xl mx-auto">
-            PT. Nama Perusahaan adalah perusahaan yang bergerak di bidang teknologi dan layanan digital sejak tahun XXXX. Kami berkomitmen untuk memberikan solusi inovatif dan pelayanan terbaik kepada klien kami.
+            Selamat datang di situs resmi <strong>Alfiyan Nuruzzamman</strong>, Sales Resmi Daihatsu yang siap menjadi teman perjalanan Anda dalam menemukan mobil impian. 
+            Dengan pelayanan yang ramah, proses yang transparan, dan komitmen penuh untuk kepuasan pelanggan, kami hadir untuk memudahkan Anda memiliki kendaraan Daihatsu terbaik sesuai kebutuhan dan anggaran.
           </p>
 
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <h3 className="text-2xl font-semibold mb-4">Visi</h3>
               <p>
-                Menjadi perusahaan teknologi terdepan di Indonesia yang memberikan dampak positif bagi masyarakat dan dunia usaha.
+                Menjadi mitra terpercaya bagi setiap pelanggan dalam mewujudkan impian memiliki mobil Daihatsu, 
+                dengan pelayanan profesional, cepat, dan penuh rasa tanggung jawab.
               </p>
             </div>
             <div>
               <h3 className="text-2xl font-semibold mb-4">Misi</h3>
               <ul className="list-disc list-inside space-y-2">
-                <li>Mengembangkan solusi digital inovatif</li>
-                <li>Meningkatkan kepuasan pelanggan melalui pelayanan terbaik</li>
-                <li>Membangun kemitraan strategis dan berkelanjutan</li>
+                <li>Memberikan konsultasi personal yang jujur dan tepat sasaran.</li>
+                <li>Menyediakan informasi promo dan simulasi kredit terbaru.</li>
+                <li>Mendampingi pelanggan dari awal hingga setelah pembelian.</li>
               </ul>
             </div>
           </div>
@@ -63,20 +65,20 @@ export default function About() {
       {/* Kenapa Memilih Kami */}
       <section className="bg-gray-50 py-20">
         <div className="max-w-5xl mx-auto px-4">
-          <h3 className="text-2xl font-semibold mb-4 text-gray-800 text-center">Kenapa Memilih Kami?</h3>
+          <h3 className="text-2xl font-semibold mb-4 text-gray-800 text-center">Kenapa Memilih Alfiyan?</h3>
           <div className="grid md:grid-cols-3 gap-6 mt-8">
             {[
               {
-                title: 'Pengalaman',
-                desc: 'Tim kami berpengalaman lebih dari 10 tahun di bidang teknologi informasi.',
+                title: 'Berpengalaman',
+                desc: 'Menguasai seluk-beluk produk Daihatsu serta proses penjualan yang cepat dan aman.',
               },
               {
-                title: 'Inovasi',
-                desc: 'Kami selalu menghadirkan solusi yang up-to-date dan kreatif.',
+                title: 'Pelayanan Personal',
+                desc: 'Melayani setiap pelanggan layaknya sahabat, dengan solusi yang sesuai kebutuhan.',
               },
               {
-                title: 'Komitmen',
-                desc: 'Fokus kami adalah keberhasilan dan kepuasan klien.',
+                title: 'Promo & Penawaran Menarik',
+                desc: 'Memberikan berbagai pilihan promo resmi dan program cicilan ringan.',
               },
             ].map((item, idx) => (
               <div key={idx} className="bg-white p-6 rounded shadow text-center hover:shadow-lg transition">
@@ -91,23 +93,20 @@ export default function About() {
       {/* Tim Kami */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4" data-aos="fade-up">
-          <h3 className="text-2xl font-semibold mb-6 text-center text-gray-800">Tim Kami</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {[
-              { name: 'Andi Pratama', role: 'CEO', img: '/undraw_chill-guy-avatar_tqsm.svg' },
-              { name: 'Sari Wijaya', role: 'CTO', img: '/undraw_chill-guy-avatar_tqsm.svg' },
-              { name: 'Budi Santoso', role: 'Lead Developer', img: '/undraw_chill-guy-avatar_tqsm.svg' },
-            ].map((member, i) => (
-              <div key={i} className="bg-white rounded-lg shadow p-4 text-center hover:shadow-lg transition">
-                <img
-                  src={member.img}
-                  alt={member.name}
-                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-                />
-                <h4 className="text-lg font-bold">{member.name}</h4>
-                <p className="text-gray-600 text-sm">{member.role}</p>
-              </div>
-            ))}
+          <h3 className="text-2xl font-semibold mb-6 text-center text-gray-800">Profil Sales</h3>
+          <div className="flex justify-center">
+            <div className="bg-white rounded-lg shadow p-6 text-center hover:shadow-lg transition max-w-sm">
+              <img
+                src="/profileAlfiyan.png"
+                alt="Alfiyan Nuruzzamman"
+                className="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+              />
+              <h4 className="text-lg font-bold">Alfiyan Nuruzzamman</h4>
+              <p className="text-gray-600 text-sm">Sales Executive Daihatsu</p>
+              <p className="mt-3 text-sm text-gray-700">
+                Siap membantu Anda memilih kendaraan yang tepat, memberikan penawaran terbaik, dan memastikan proses pembelian Anda mudah serta menyenangkan.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -115,23 +114,28 @@ export default function About() {
       {/* Klien & Partner */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4" data-aos="fade-up">
-          <h3 className="text-2xl font-semibold text-center mb-6 text-gray-800">Klien & Partner</h3>
-          <div className="flex justify-center flex-wrap gap-6">
-            <img src="undraw_agreement_w6ua.svg" alt="undraw_agreement_w6ua.svg" className="h-12" />
-            <img src="undraw_collab_h1mq.svg" alt="undraw_collab_h1mq.svg" className="h-12" />
-            <img src="undraw_team-up_qeem.svg" alt="undraw_team-up_qeem.svg" className="h-12" />
+          <h3 className="text-2xl font-semibold text-center mb-6 text-gray-800">Testimoni & Partner</h3>
+          <div className="flex flex-col items-center gap-6">
+            <blockquote className="bg-white p-6 rounded-lg shadow max-w-2xl italic text-gray-700">
+              "Pelayanan Alfiyan sangat ramah dan membantu. Proses pembelian mobil saya jadi cepat dan lancar."
+              <span className="block mt-2 font-semibold">— Bapak Andi, Bekasi</span>
+            </blockquote>
+            <blockquote className="bg-white p-6 rounded-lg shadow max-w-2xl italic text-gray-700">
+              "Saya dapat promo menarik dan penjelasan detail sebelum membeli. Sangat puas!"
+              <span className="block mt-2 font-semibold">— Ibu Rina, Cikarang</span>
+            </blockquote>
           </div>
 
           <div className="mt-20 bg-blue-50 p-10 rounded text-center">
-            <h3 className="text-2xl font-bold mb-4 text-gray-800">Ingin Bekerja Sama Dengan Kami?</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-800">Ingin Konsultasi atau Penawaran Terbaik?</h3>
             <p className="text-gray-700 mb-6">
-              Hubungi tim kami sekarang juga untuk diskusi lebih lanjut.
+              Hubungi Alfiyan sekarang dan dapatkan promo spesial serta proses mudah tanpa ribet.
             </p>
             <a
               href="/contact"
-              className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition"
+              className="bg-red-600 text-white px-6 py-3 rounded hover:bg-red-800 transition"
             >
-              Hubungi Kami
+              Hubungi Sekarang
             </a>
           </div>
         </div>
