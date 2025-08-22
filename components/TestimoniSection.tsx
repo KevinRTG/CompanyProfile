@@ -1,13 +1,14 @@
 export default function TestimoniSection() {
   const testimonies = [
     {
-      text: 'Pelayanan cepat dan profesional. Kami sangat puas!',
+      text: 'Proses pembelian mobil Daihatsu sangat mudah dan cepat. Pelayanannya ramah, kami merasa benar-benar diperhatikan.',
       author: '— Bapak Andi, CEO PT. Maju Jaya',
     },
     {
-      text: 'Solusi IT yang sangat membantu bisnis kami berkembang.',
+      text: 'Mobil Daihatsu yang kami beli sangat nyaman dan irit. Cocok untuk kebutuhan keluarga dan bisnis kami.',
       author: '— Ibu Sari, Owner Toko Kita',
     },
+
   ];
 
   return (

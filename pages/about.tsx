@@ -38,7 +38,7 @@ export default function About() {
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-6">Tentang Kami</h2>
           <p className="text-lg text-center mb-12 max-w-3xl mx-auto">
-            Selamat datang di situs resmi <strong>Alfiyan Nuruzzamman</strong>, Sales Resmi Daihatsu yang siap menjadi teman perjalanan Anda dalam menemukan mobil impian. 
+            Selamat datang di situs resmi <strong>Alfiyan Nuruzzaman</strong>, Sales Resmi Daihatsu yang siap menjadi teman perjalanan Anda dalam menemukan mobil impian. 
             Dengan pelayanan yang ramah, proses yang transparan, dan komitmen penuh untuk kepuasan pelanggan, kami hadir untuk memudahkan Anda memiliki kendaraan Daihatsu terbaik sesuai kebutuhan dan anggaran.
           </p>
 
@@ -95,13 +95,13 @@ export default function About() {
         <div className="max-w-6xl mx-auto px-4" data-aos="fade-up">
           <h3 className="text-2xl font-semibold mb-6 text-center text-gray-800">Profil Sales</h3>
           <div className="flex justify-center">
-            <div className="bg-white rounded-lg shadow p-6 text-center hover:shadow-lg transition max-w-sm">
+            <div className="bg-white rounded-lg shadow p-6 text-center hover:shadow-lg transition w-full sm:max-w-sm md:max-w-md lg:max-w-lg">
               <img
                 src="/profileAlfiyan.png"
                 alt="Alfiyan Nuruzzamman"
                 className="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
               />
-              <h4 className="text-lg font-bold">Alfiyan Nuruzzamman</h4>
+              <h4 className="text-lg font-bold">Alfiyan Nuruzzaman</h4>
               <p className="text-gray-600 text-sm">Sales Executive Daihatsu</p>
               <p className="mt-3 text-sm text-gray-700">
                 Siap membantu Anda memilih kendaraan yang tepat, memberikan penawaran terbaik, dan memastikan proses pembelian Anda mudah serta menyenangkan.

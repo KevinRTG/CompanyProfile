@@ -42,9 +42,19 @@ export default function Footer() {
         {/* Kontak */}
         <div>
           <h4 className="text-white font-semibold mb-3">Kontak Kami</h4>
-          <p>📍 Cikarang, Indonesia</p>
-          <p>📧 yannuruzzaman112@gmail.com</p>
-          <p>📞 +62 821 5150 2168</p>
+          <p>➢ Cikarang, Indonesia</p>
+          <p>✉︎ yannuruzzaman112@gmail.com</p>
+           <p>
+              ✆ {" "}
+              <a
+                href="https://wa.link/1h0jjn"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                +62 821 5150 2168 (WhatsApp)
+              </a>
+          </p>
         </div>
 
         {/* Sosial Media (Teks Saja, 1 Kolom) */}
@@ -77,7 +87,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="mt-10 text-center text-xs text-white border-t border-gray-700 pt-4">
-        &copy; 2025 Alfiyan Nuruzzamman. All rights reserved.
+        &copy; 2025 Alfiyan Nuruzzaman. All rights reserved.
       </div>
     </footer>
   );

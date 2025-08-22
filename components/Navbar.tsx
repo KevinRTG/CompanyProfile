@@ -32,140 +32,97 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-const getLinkClass = (href: string, sectionName?: string) => {
-  const isActive =
-    (sectionName && activeSection === sectionName) ||
-    pathname === href;
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? 'hidden' : 'auto';
+    document.body.style.height = isOpen ? '100vh' : 'auto';
+  }, [isOpen]);
 
-  const baseStyle =
-    'px-3 py-1 rounded transition-all duration-300';
+  const getLinkClass = (href: string, sectionName?: string) => {
+    const isActive =
+      (sectionName && activeSection === sectionName) ||
+      pathname === href;
 
-  // Belum scroll → putih, teks merah
-  const topStyle = 'text-red-600 bg-white hover:bg-red-50';
+    const baseStyle = 'px-3 py-1 rounded transition-all duration-300';
+    const topStyle = 'text-red-600 bg-white hover:bg-red-50';
+    const scrollStyle = 'text-red-600 bg-white backdrop-blur-lg hover:bg-white/30';
+    const activeStyle = isScrolled
+      ? 'bg-red-700 text-white font-bold shadow-[0_0_5px_rgba(255,255,255,0.8)]'
+      : 'bg-red-100 text-red-700 font-bold';
 
-  // Sudah scroll → menu putih transparan + teks putih
-  const scrollStyle =
-    'text-red-600 bg-white backdrop-blur-lg hover:bg-white/30';
-
-  // Aktif
-  const activeStyle = isScrolled
-    ? 'bg-red-700 text-white font-bold shadow-[0_0_5px_rgba(255,255,255,0.8)]'
-    : 'bg-red-100 text-red-700 font-bold';
-
-  return `${baseStyle} ${
-    isActive
-      ? activeStyle
-      : isScrolled
-      ? scrollStyle
-      : topStyle
-  }`;
-};
-
+    return `${baseStyle} ${
+      isActive
+        ? activeStyle
+        : isScrolled
+        ? scrollStyle
+        : topStyle
+    }`;
+  };
 
   return (
-      <nav
-        className={`fixed w-full z-50 top-0 transition-all duration-300 ${
-          isScrolled
-            ? 'bg-black/15 backdrop-blur-lg'
-            : 'bg-white'
-        }`}
-      >
-
+    <nav
+      className={`fixed w-full z-50 top-0 transition-all duration-300 ${
+        isScrolled ? 'bg-black/15 backdrop-blur-lg' : 'bg-white'
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link href="#hero" className="flex items-center space-x-3">
+        <Link href="/#hero" className="flex items-center space-x-3">
           <img
             src="https://daihatsu.co.id/_nuxt/daihatsu-logo.BbT9teEy.svg"
             alt="Logo Daihatsu"
             className="h-8 w-auto transition"
           />
-          <span
-            className={`text-2xl font-bold transition ${
-              isScrolled ? 'text-red-600' : 'text-red-600'
-            }`}
-          >
+          <span className="text-2xl font-bold text-red-600">
             Daihatsu Sales
           </span>
         </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-4 text-m font-medium">
-          <Link href="/#hero" className={getLinkClass('/#hero', 'hero')}>
-            Home
-          </Link>
-          <Link href="/#produk" className={getLinkClass('/#produk', 'produk')}>
-            Produk
-          </Link>
-          <Link href="/about" className={getLinkClass('/about')}>
-            Tentang
-          </Link>
-          <Link href="/contact" className={getLinkClass('/contact')}>
-            Kontak
-          </Link>
+          <Link href="/#hero" className={getLinkClass('/#hero', 'hero')}>Home</Link>
+          <Link href="/#produk" className={getLinkClass('/#produk', 'produk')}>Produk</Link>
+          <Link href="/about" className={getLinkClass('/about')}>Tentang</Link>
+          <Link href="/contact" className={getLinkClass('/contact')}>Kontak</Link>
         </div>
 
-        {/* Mobile Button */}
-        <div className="md:hidden">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className={`${isScrolled ? 'text-white' : 'text-red-600'} focus:outline-none`}
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              {isOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
-        </div>
+        {/* Hamburger Button */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="relative w-8 h-8 flex flex-col justify-center items-center group md:hidden"
+          aria-label="Toggle Menu"
+        >
+          <span
+            className={`absolute h-0.5 w-6 bg-current transform transition duration-300 ease-in-out ${
+              isOpen ? 'rotate-45 top-3' : 'top-2'
+            }`}
+          />
+          <span
+            className={`absolute h-0.5 w-6 bg-current transition duration-300 ease-in-out ${
+              isOpen ? 'opacity-0' : 'top-3.5'
+            }`}
+          />
+          <span
+            className={`absolute h-0.5 w-6 bg-current transform transition duration-300 ease-in-out ${
+              isOpen ? '-rotate-45 top-3' : 'top-5'
+            }`}
+          />
+        </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Fullscreen Overlay */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className={`md:hidden px-4 py-4 space-y-2 shadow-lg rounded-b-lg ${
-              isScrolled ? 'bg-red-600' : 'bg-white'
-            }`}
+            className="fixed inset-0 h-screen w-screen bg-white z-[999] flex flex-col items-center justify-center space-y-8 text-lg font-semibold text-red-600"
           >
-            <Link
-              href="/#hero"
-              className={getLinkClass('/#hero', 'hero') + ' block text-center'}
-              onClick={() => setIsOpen(false)}
-            >
-              Home
-            </Link>
-            <Link
-              href="/#produk"
-              className={getLinkClass('/#produk', 'produk') + ' block text-center'}
-              onClick={() => setIsOpen(false)}
-            >
-              Produk
-            </Link>
-            <Link
-              href="/about"
-              className={getLinkClass('/about') + ' block text-center'}
-              onClick={() => setIsOpen(false)}
-            >
-              Tentang
-            </Link>
-            <Link
-              href="/contact"
-              className={getLinkClass('/contact') + ' block text-center'}
-              onClick={() => setIsOpen(false)}
-            >
-              Kontak
-            </Link>
+            <Link href="/#hero" onClick={() => setIsOpen(false)}>Home</Link>
+            <Link href="/#produk" onClick={() => setIsOpen(false)}>Produk</Link>
+            <Link href="/about" onClick={() => setIsOpen(false)}>Tentang</Link>
+            <Link href="/contact" onClick={() => setIsOpen(false)}>Kontak</Link>
           </motion.div>
         )}
       </AnimatePresence>
