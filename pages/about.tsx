@@ -36,21 +36,27 @@ export default function About() {
       {/* Tentang Kami, Visi & Misi */}
       <section className="bg-red-900 py-20 text-white">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-6">Tentang Kami</h2>
-          <p className="text-lg text-center mb-12 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-6" data-aos="fade-down">
+            Tentang Kami
+          </h2>
+          <p
+            className="text-lg text-center mb-12 max-w-3xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             Selamat datang di situs resmi <strong>Alfiyan Nuruzzaman</strong>, Sales Resmi Daihatsu yang siap menjadi teman perjalanan Anda dalam menemukan mobil impian. 
             Dengan pelayanan yang ramah, proses yang transparan, dan komitmen penuh untuk kepuasan pelanggan, kami hadir untuk memudahkan Anda memiliki kendaraan Daihatsu terbaik sesuai kebutuhan dan anggaran.
           </p>
 
           <div className="grid md:grid-cols-2 gap-12">
-            <div>
+            <div data-aos="fade-right" data-aos-delay="300">
               <h3 className="text-2xl font-semibold mb-4">Visi</h3>
               <p>
                 Menjadi mitra terpercaya bagi setiap pelanggan dalam mewujudkan impian memiliki mobil Daihatsu, 
                 dengan pelayanan profesional, cepat, dan penuh rasa tanggung jawab.
               </p>
             </div>
-            <div>
+            <div data-aos="fade-left" data-aos-delay="400">
               <h3 className="text-2xl font-semibold mb-4">Misi</h3>
               <ul className="list-disc list-inside space-y-2">
                 <li>Memberikan konsultasi personal yang jujur dan tepat sasaran.</li>
@@ -65,7 +71,12 @@ export default function About() {
       {/* Kenapa Memilih Kami */}
       <section className="bg-gray-50 py-20">
         <div className="max-w-5xl mx-auto px-4">
-          <h3 className="text-2xl font-semibold mb-4 text-gray-800 text-center">Kenapa Memilih Alfiyan?</h3>
+          <h3
+            className="text-2xl font-semibold mb-4 text-gray-800 text-center"
+            data-aos="fade-up"
+          >
+            Kenapa Memilih Alfiyan?
+          </h3>
           <div className="grid md:grid-cols-3 gap-6 mt-8">
             {[
               {
@@ -81,7 +92,12 @@ export default function About() {
                 desc: 'Memberikan berbagai pilihan promo resmi dan program cicilan ringan.',
               },
             ].map((item, idx) => (
-              <div key={idx} className="bg-white p-6 rounded shadow text-center hover:shadow-lg transition">
+              <div
+                key={idx}
+                className="bg-white p-6 rounded shadow text-center hover:shadow-lg transition"
+                data-aos="zoom-in"
+                data-aos-delay={100 + idx * 150}
+              >
                 <h4 className="text-lg font-bold mb-2">{item.title}</h4>
                 <p className="text-gray-600 text-sm">{item.desc}</p>
               </div>
@@ -116,17 +132,29 @@ export default function About() {
         <div className="max-w-6xl mx-auto px-4" data-aos="fade-up">
           <h3 className="text-2xl font-semibold text-center mb-6 text-gray-800">Testimoni & Partner</h3>
           <div className="flex flex-col items-center gap-6">
-            <blockquote className="bg-white p-6 rounded-lg shadow max-w-2xl italic text-gray-700">
+            <blockquote
+              className="bg-white p-6 rounded-lg shadow max-w-2xl italic text-gray-700"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               "Pelayanan Alfiyan sangat ramah dan membantu. Proses pembelian mobil saya jadi cepat dan lancar."
               <span className="block mt-2 font-semibold">— Bapak Andi, Bekasi</span>
             </blockquote>
-            <blockquote className="bg-white p-6 rounded-lg shadow max-w-2xl italic text-gray-700">
+            <blockquote
+              className="bg-white p-6 rounded-lg shadow max-w-2xl italic text-gray-700"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               "Saya dapat promo menarik dan penjelasan detail sebelum membeli. Sangat puas!"
               <span className="block mt-2 font-semibold">— Ibu Rina, Cikarang</span>
             </blockquote>
           </div>
 
-          <div className="mt-20 bg-blue-50 p-10 rounded text-center">
+          <div
+            className="mt-20 bg-blue-50 p-10 rounded text-center"
+            data-aos="zoom-in-up"
+            data-aos-delay="500"
+          >
             <h3 className="text-2xl font-bold mb-4 text-gray-800">Ingin Konsultasi atau Penawaran Terbaik?</h3>
             <p className="text-gray-700 mb-6">
               Hubungi Alfiyan sekarang dan dapatkan promo spesial serta proses mudah tanpa ribet.

@@ -3,20 +3,28 @@ export default function TestimoniSection() {
     {
       text: 'Proses pembelian mobil Daihatsu sangat mudah dan cepat. Pelayanannya ramah, kami merasa benar-benar diperhatikan.',
       author: '— Bapak Andi, CEO PT. Maju Jaya',
+      animation: 'fade-right', // slide dari kiri ke kanan
     },
     {
       text: 'Mobil Daihatsu yang kami beli sangat nyaman dan irit. Cocok untuk kebutuhan keluarga dan bisnis kami.',
       author: '— Ibu Sari, Owner Toko Kita',
+      animation: 'fade-left', // slide dari kanan ke kiri
     },
-
   ];
 
   return (
-    <section className="bg-gray-50 py-20" data-aos="zoom-in">
-      <h2 className="text-3xl font-semibold text-center mb-12">Apa Kata Klien Kami</h2>
+    <section className="bg-gray-50 py-20">
+      <h2 className="text-3xl font-semibold text-center mb-12" data-aos="zoom-in">
+        Apa Kata Klien Kami
+      </h2>
       <div className="max-w-4xl mx-auto px-4 space-y-8">
         {testimonies.map((t, i) => (
-          <blockquote key={i} className="bg-white p-6 rounded shadow">
+          <blockquote
+            key={i}
+            data-aos={t.animation}
+            data-aos-duration="1000"
+            className="bg-white p-6 rounded shadow"
+          >
             <p className="text-gray-700 italic">{`"${t.text}"`}</p>
             <footer className="mt-4 text-right font-semibold text-black">{t.author}</footer>
           </blockquote>
