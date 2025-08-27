@@ -12,7 +12,7 @@ This company profile website provides:
 
 - A professional landing page
 - Company background section
-- Product showcase linking to marketplaces **(Catalogoe Daihatsu)**
+- Product showcase linking to marketplaces **(Catalogue Daihatsu)**
 - Smart AI-powered chatbot **(via Botpress)**
 - Responsive design across devices
 - Contact form that integrates with email or WhatsApp
