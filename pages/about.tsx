@@ -23,7 +23,7 @@ export default function About() {
           botId: '1ae0eadd-0bab-4110-8c5f-75fce3601d21',
           configuration: {},
           clientId: '229b8bcf-17ab-4867-bde9-55540a8b6bb4',
-          selector: '#webchat',
+          selector: '#botchat',
         });
       }
     };

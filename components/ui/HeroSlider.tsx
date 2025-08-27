@@ -27,11 +27,11 @@ export default function HeroSlider() {
       >
         {slides.map((src, i) => (
           <SwiperSlide key={i}>
-            <div className="relative w-full h-screen">
+            <div className="relative w-full h-[80vh] md:h-screen">
               <img
                 src={src}
                 alt={`Slide Daihatsu ${i + 1}`}
-                className="w-full h-full object-cover scale-100 transition-transform duration-1000 ease-out"
+                className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-black/50 pointer-events-none" />
             </div>

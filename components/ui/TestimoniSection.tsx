@@ -14,7 +14,11 @@ export default function TestimoniSection() {
 
   return (
     <section className="bg-gray-50 py-20">
-      <h2 className="text-3xl font-semibold text-center mb-12" data-aos="zoom-in">
+      <h2
+        className="text-3xl font-semibold text-center mb-12"
+        data-aos="zoom-in"
+        data-aos-duration="800"
+      >
         Apa Kata Klien Kami
       </h2>
       <div className="max-w-4xl mx-auto px-4 space-y-8">
@@ -23,10 +27,13 @@ export default function TestimoniSection() {
             key={i}
             data-aos={t.animation}
             data-aos-duration="1000"
-            className="bg-white p-6 rounded shadow"
+            data-aos-delay={i * 200}
+            className="bg-white p-6 rounded shadow transition-all"
           >
-            <p className="text-gray-700 italic">{`"${t.text}"`}</p>
-            <footer className="mt-4 text-right font-semibold text-black">{t.author}</footer>
+            <p className="text-gray-700 italic text-base md:text-lg">{`"${t.text}"`}</p>
+            <footer className="mt-4 text-right font-semibold text-black text-sm md:text-base">
+              {t.author}
+            </footer>
           </blockquote>
         ))}
       </div>

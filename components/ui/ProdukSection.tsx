@@ -60,29 +60,19 @@ const products = [
 
 export default function ProdukSection() {
   return (
-    <section id="produk" className="py-20 bg-gray-50 text-center">
-      <h2
-        className="text-3xl font-bold text-gray-800 mb-4"
-        data-aos="fade-down"
-        data-aos-duration="800"
-      >
-        Produk Kami
-      </h2>
-      <p
-        className="text-gray-500 mb-10 text-lg"
-        data-aos="fade-up"
-        data-aos-delay="200"
-        data-aos-duration="800"
-      >
+    <section id="produk" className="min-h-screen py-20 bg-gray-50 text-center">
+      <h2 className="text-xl sm:text-3xl font-bold text-gray-800 mb-4">Produk Kami</h2>
+      <p className="text-gray-500 mb-10 text-base sm:text-lg max-w-xl mx-auto px-4">
         Temukan mobil Daihatsu yang sesuai dengan kebutuhan Anda
       </p>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-[16px] gap-y-6 px-2 place-items-start">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 px-4">
         {products.map((p, i) => (
           <div
             key={i}
             data-aos="zoom-in-up"
             data-aos-delay={100 + i * 100}
             data-aos-duration="1000"
+            className="w-full"
           >
             <ProdukCard
               src={p.src}

@@ -3,11 +3,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import HeroSection from '../components/HeroSection';
-import ProdukSection from '../components/ProdukSection';
-import TestimoniSection from '../components/TestimoniSection';
-import CTASection from '../components/CTASection';
-import Webchat from '../components/Webchat';
+import HeroSection from '../components/ui/HeroSection';
+import ProdukSection from '../components/ui/ProdukSection';
+import TestimoniSection from '../components/ui/TestimoniSection';
+import CTASection from '../components/ui/CTASection';
+import BotChat from '../components/ui/BotChat';
 
 export default function Home() {
   useEffect(() => {
@@ -21,7 +21,7 @@ export default function Home() {
       <ProdukSection />
       <TestimoniSection />
       <CTASection />
-      <Webchat />
+      <BotChat />
       <Footer />
     </>
   );
