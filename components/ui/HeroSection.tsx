@@ -4,8 +4,9 @@ export default function HeroSection() {
   return (
     <section id="hero" className="relative w-full h-[80vh]">
       <HeroSlider />
+      {/* Overlay Teks */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10 text-white">
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold drop-shadow-lg leading-snug">
+        <h1 className="text-4xl md:text-6xl font-bold drop-shadow-lg leading-snug">
           Daihatsu, Teman Perjalanan Hidup Anda
         </h1>
         <p className="mt-4 max-w-xl sm:max-w-2xl text-base sm:text-lg md:text-xl drop-shadow-md">
